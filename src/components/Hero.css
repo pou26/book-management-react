@@ -1,0 +1,93 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px;
+    background: url('colorful-painted-paper-texture.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    margin-top: 15px;
+    /* opacity: 0;
+    filter: blur(10px);
+    animation: fadeInBlur 2s forwards, slideDown 2s forwards; */
+}
+
+/* Hero Image */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    filter: blur(10px);
+    animation: fadeInBlur 2s forwards, slideDown 2s forwards;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 90%;
+    opacity: 0;
+    filter: blur(10px);
+    animation: fadeInBlur 2s forwards, slideDown 2s forwards;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    color: #6c3fb3;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+
+
+/* Animation for Fade In and Blur Removal */
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Animation for Falling Down Effect */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        max-width: 90%;
+        margin-left: 20px;
+    }
+}

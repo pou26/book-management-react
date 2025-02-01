@@ -1,0 +1,108 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right,  #e0deb5c5, #fefe03c5);
+    padding: 10px;
+  }
+  
+  .form-box {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);  /* Blur effect for glass finish */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  label span {
+    color: red;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  .genre-list{
+    display:flex;
+
+  }
+  .cover-preview{
+    margin-left: -30px;
+    margin-top: 20px;
+  }
+  
+  .add-btn {
+    width: 100%;
+    padding: 10px;
+    background:  #a51cc8c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background:  #b169e4;
+  }
+  .success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeOut 2s ease-in-out;
+  }
+  .success-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    .form-box {
+      padding: 20px;
+    }
+    input, textarea {
+      font-size: 12px;
+    }
+  }
